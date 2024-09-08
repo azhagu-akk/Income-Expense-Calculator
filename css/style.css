@@ -558,6 +558,10 @@ video {
   display: flex;
 }
 
+.w-full {
+  width: 100%;
+}
+
 .justify-between {
   justify-content: space-between;
 }
@@ -649,6 +653,10 @@ video {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.pb-10 {
+  padding-bottom: 2.5rem;
 }
 
 .pt-10 {
@@ -846,13 +854,13 @@ video {
     padding-right: 4rem;
   }
 
-  .lg\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-  }
-
   .lg\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+
+  .lg\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 }
