@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class=" px-16 sm:px-24 md:px-44 lg:px-16">
+      <div class="ledger">
+        <h1 class="text-2xl font-bold text-center pt-10 lg:text-4xl">Income Expense Tracker</h1>
+        
+        <div class="inc-exp-container  space-y-10 lg:space-y-0 lg:flex lg:justify-between lg:items-center pt-10">
+            <div class="inc bg-green-300 px-20 py-8 sm:py-6 md:py-8 hover:scale-105 hover:cursor-pointer hover:transition">
+            <h4>Income</h4>
+            <p id="inc-amt" class="amt plus font-bold text-2xl">₹ 0.00</p>
+          </div>
+
+          <div class="font-bold  text-lg border-b-2 bg-yellow-200 hover:scale-105 hover:cursor-pointer hover:transition border-yellow-500 py-2 px-20 sm:py-6 md:py-8 hover:bg-yellow-500 hover:text-white">
+                <h1>Your Balance</h1>
+        <h1 id="balance" class="font-bold text-2xl">₹ 0.00</h1>
+            </div>
+            
+             <div class="exp bg-red-300 sm:py-6 md:py-8 px-20 py-8 hover:scale-105 hover:cursor-pointer hover:transition">
+            <h4>Expenses</h4>
+            <p id="exp-amt" class="amt minus font-bold text-2xl">₹ 0.00</p>
+            </div>
+          
+         
+        </div>
+        <form action="#" id="form" class=" space-y-10 lg:space-y-0 lg:flex lg:justify-between lg:items-center pt-16">
+          <div class="form-control  space-y-4 lg:space-y-0">
+            <label for="desc" class="font-bold">Description :</label>
+            <input type="text" name="desc" id="desc" placeholder="Enter Description" class="border-2 px-6 py-2 border-gray-300 rounded-lg hover:border-blue-500 outline-none sm:w-full md:w-full lg:w-max" />
+          </div>
+
+          <div class="form-control  space-y-4 lg:space-y-0">
+            <label for="amount" class="font-bold">Amount :</label>
+            <input type="number" name="amount" id="amount" placeholder="Amount" class="border-2 px-6 py-2 border-gray-300 rounded-lg hover:border-blue-500 outline-none sm:w-full lg:w-max  md:w-full" />
+          </div>
+          <button class="btn bg-blue-500 px-8 rounded-lg sm:w-full md:w-full lg:w-max hover:bg-blue-700 py-2 text-white font-bold" type="submit">Add Transaction</button>
+        </form>
+      </div>
+      <div class="transaction pt-16">
+        <h1 class="text-2xl font-bold lg:text-3xl">Transaction Details</h1>
+        <ul class="trans pt-10" id="trans">
+          <li class="exp flex justify-between">
+            Insurance
+            <span>-1500</span>
+            <button class="btn-del">x</button>
+          </li>
+          <li class="inc">
+            Salary
+            <span>35000</span>
+            <button class="btn-del">x</button>
+          </li>
+          <li class="exp">
+            Food
+            <span>-350</span>
+            <button class="btn-del">x</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
